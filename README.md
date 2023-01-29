@@ -2,9 +2,9 @@
 
 아래 3가지 어노테이션의 사용법 
 
-@PathVariable
-@RequestParam
-@ModelAttribute
+@PathVariable &nbsp;
+@RequestParam &nbsp;
+@ModelAttribute &nbsp;
 
 
 요약 -
