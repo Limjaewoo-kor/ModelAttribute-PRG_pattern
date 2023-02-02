@@ -2,19 +2,30 @@
 
 아래 3가지 어노테이션의 사용법 
 
-@PathVariable &nbsp;
-@RequestParam &nbsp;
-@ModelAttribute &nbsp;
+
+@PathVariable 
 
 
-요약 -
+@RequestParam 
 
-폼 객체를 다음과 같이 각각 파라미터로 받아도되지만,
-@RequestParam String itemName,
-@RequestParam int price,
-@RequestParam Integer quantity
+
+@ModelAttribute 
+
+
+----
+
+
+# 요약 -
+
+## 폼 객체를 다음과 같이 각각 파라미터로 받아도되지만,
+- @RequestParam String itemName,
+- @RequestParam int price,
+- @RequestParam Integer quantity
+
 
 @ModelAttribute를 이용하면  Item item으로 객체로 받아낼 수 있다.
+
+
 또한 @ModelAttribute 사용시에는 자동으로 객체이름의 맨앞자만 소문자 ex)Item -> item으로 모델에
 model.addAttribute("item",item); 까지 자동으로 해주기때문에 생략할 수 있다.
 임의의 객체의 경우 @ModelAttribute 어노테이션까지도 생략은 가능하나, 헛갈릴 수 있으니 표기하는것을 추천한다.
